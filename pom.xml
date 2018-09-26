@@ -44,6 +44,26 @@
                     <compilerArgument>-Werror</compilerArgument>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.22.0</version>
+                <configuration>
+                    <rerunFailingTestsCount>2</rerunFailingTestsCount><includes>
+                        <include>**/*Test.class</include>
+                    </includes>
+                    <systemPropertyVariables>
+                        <cucumber.options>--strict</cucumber.options>
+                    </systemPropertyVariables>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.apache.maven.surefire</groupId>
+                        <artifactId>surefire-junit47</artifactId>
+                        <version>2.22.0</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
         </plugins>
     </build>
 </project>

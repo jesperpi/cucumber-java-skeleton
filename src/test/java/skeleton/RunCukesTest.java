@@ -5,6 +5,8 @@ import cucumber.api.junit.Cucumber;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(plugin = {"pretty"})
+@CucumberOptions(strict = true,
+        plugin = { "json:target/cucumber-report-composite.json", "pretty",
+                "html:target/cucumber/","rerun:target/rerun_featureName.txt" })
 public class RunCukesTest {
 }
