@@ -11,6 +11,7 @@
     <modules>
         <module>surefire</module>
         <module>failsafe</module>
+        <module>parallel</module>
     </modules>
 
     <properties>
