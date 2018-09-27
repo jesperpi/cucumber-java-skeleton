@@ -37,7 +37,7 @@
                             <goal>integration-test</goal>
                         </goals>
                         <configuration>
-                            <rerunFailingTestsCount>2</rerunFailingTestsCount>
+                            <rerunFailingTestsCount>3</rerunFailingTestsCount>
                             <reuseForks>false</reuseForks>
                             <argLine>-Xmx1024m</argLine>
                             <includes>
@@ -54,7 +54,7 @@
                             <goal>integration-test</goal>
                         </goals>
                         <configuration>
-                            <rerunFailingTestsCount>2</rerunFailingTestsCount>
+                            <rerunFailingTestsCount>3</rerunFailingTestsCount>
                             <reuseForks>false</reuseForks>
                             <argLine>-Xmx1024m</argLine>
                             <includes>
