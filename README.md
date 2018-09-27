@@ -7,9 +7,15 @@ Without rerun you would expect the feature to fail 7 times out of 8.
 Currently the project is configured to rerun each failing test 3 times: <br />
   -Dsurefire.rerunFailingTestsCount=3 <br />
   -Dfailsafe.rerunFailingTestsCount=3 <br />
-This means that each scenario has a 1/16 chance of failing and the feature as a whole will fail 3 times out of 16.
+This means that each scenario has a 1/16 chance of failing and the feature as a whole will fail 3 times out of 16. <br />
 
-The two modules demonstrate the different configurations required to execute cucumber rerun as part of failsafe and as part of surefire (hint: it's pretty similar)
+The two modules demonstrate the different configurations required to execute cucumber rerun as part of failsafe and as
+part of surefire (hint: it's pretty similar)
+
+## Parallel module
+
+The third module demonstrates how to use the cucumber-jvm parallel plugin to generate the tests for running with the
+maven failsafe plugin.
 
 ## Use Maven
 
