@@ -20,5 +20,9 @@ public class Stepdefs {
 
     @Then("^my belly should growl$")
     public void growl(){
+        Random rnd = new Random();
+        if (rnd.nextBoolean()) {
+            throw new IllegalStateException("My belly is silent!");
+        }
     }
 }
