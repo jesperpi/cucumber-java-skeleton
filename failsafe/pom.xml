@@ -33,7 +33,7 @@
                             <goal>integration-test</goal>
                         </goals>
                         <configuration>
-                            <rerunFailingTestsCount>2</rerunFailingTestsCount><includes>
+                            <rerunFailingTestsCount>3</rerunFailingTestsCount><includes>
                             <include>**/*Test.class</include>
                         </includes>
                             <systemPropertyVariables>
